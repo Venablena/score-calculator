@@ -28,16 +28,8 @@ function highScore(){
   return newArr
 }
 
-highScore()
+const sortedArr = newArr.sort(function(a,b) {return a.hs - b.hs})
+console.log(sortedArr);
 
-// for (let i = 0; i < scoresArr.length; i++) {
-//   scoresArr[i].reduce((highScore, each) => {
-//     return highScore + each
-//   }, 0)
-// }
-// const result = scoresArr.reduce((highScore, each) =>{
-//   for (let i = 0; i < highScore.length; i++) {
-//     highScore[i]
-//   }
-//   return result
-// }, 0)
+highScore()
+console.log(sortedArr[0]);
