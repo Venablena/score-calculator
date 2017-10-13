@@ -28,8 +28,10 @@ function highScore(){
   return newArr
 }
 
-const sortedArr = newArr.sort(function(a,b) {return a.hs - b.hs})
-console.log(sortedArr);
+function sorting(array){
+  return array.sort((a,b) => b.hs - a.hs)
+}
 
 highScore()
-console.log(sortedArr[0]);
+const sortedArr = sorting(newArr)
+console.log(sortedArr[0])
